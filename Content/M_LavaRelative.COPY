@@ -1,0 +1,237 @@
+Begin Object Class=/Script/Engine.Material Name="M_LavaRelative"
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionWorldPosition Name="MaterialExpressionWorldPosition_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVertexNormalWS Name="MaterialExpressionVertexNormalWS_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVertexNormalWS Name="MaterialExpressionVertexNormalWS_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTransformPosition Name="MaterialExpressionTransformPosition_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_7"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_6"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObject Name="MaterialExpressionTextureObject_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureObject Name="MaterialExpressionTextureObject_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionNormalize Name="MaterialExpressionNormalize_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_5"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMaterialFunctionCall Name="MaterialExpressionMaterialFunctionCall_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_32"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_31"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionComponentMask Name="MaterialExpressionComponentMask_5"
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionWorldPosition_3"
+      WorldPositionShaderOffset=WPT_ExcludeAllShaderOffsets
+      MaterialExpressionEditorX=-992
+      MaterialExpressionEditorY=80
+      MaterialExpressionGuid=A3E431634B4A70ABA3308698FCE712C7
+      Material=Material'"M_LavaRelative"'
+   End Object
+   Begin Object Name="MaterialExpressionVertexNormalWS_1"
+      MaterialExpressionEditorX=-272
+      MaterialExpressionEditorY=-64
+      MaterialExpressionGuid=DB911D8D4706A04D8C910D92F484C25F
+      Material=Material'"M_LavaRelative"'
+   End Object
+   Begin Object Name="MaterialExpressionVertexNormalWS_0"
+      MaterialExpressionEditorX=99
+      MaterialExpressionEditorY=315
+      MaterialExpressionGuid=DB911D8D4706A04D8C910D92F484C25F
+      Material=Material'"M_LavaRelative"'
+   End Object
+   Begin Object Name="MaterialExpressionTransformPosition_0"
+      Input=(Expression=MaterialExpressionWorldPosition'"M_LavaRelative:MaterialExpressionWorldPosition_3"')
+      TransformSourceType=TRANSFORMPOSSOURCE_World
+      MaterialExpressionEditorX=-640
+      MaterialExpressionEditorY=80
+      MaterialExpressionGuid=6FE290664AE526B17AFC429B028D8F2A
+      Material=Material'"M_LavaRelative"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_7"
+      Coordinates=(Expression=MaterialExpressionComponentMask'"M_LavaRelative:MaterialExpressionComponentMask_5"')
+      Texture=Texture2D'"/Game/Textures/T_Rock_Basalt_N.T_Rock_Basalt_N"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=608
+      MaterialExpressionEditorY=-64
+      MaterialExpressionGuid=98C121674C1F5C60D7E8588CEB2271FE
+      Material=Material'"M_LavaRelative"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_6"
+      Coordinates=(Expression=MaterialExpressionComponentMask'"M_LavaRelative:MaterialExpressionComponentMask_5"')
+      Texture=Texture2D'"/Game/Textures/T_Fire_Tiled_D.T_Fire_Tiled_D"'
+      MaterialExpressionEditorX=608
+      MaterialExpressionEditorY=-256
+      MaterialExpressionGuid=6E4E216F4E7DCE04AEA0E2BAFE7FD8C1
+      Material=Material'"M_LavaRelative"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureObject_1"
+      Texture=Texture2D'"/Game/Textures/T_Rock_Basalt_N.T_Rock_Basalt_N"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-272
+      MaterialExpressionEditorY=-368
+      MaterialExpressionGuid=DDC843EB4CBD30386E36DA935BD67B91
+      Material=Material'"M_LavaRelative"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureObject_0"
+      Texture=Texture2D'"/Game/Textures/T_Fire_Tiled_D.T_Fire_Tiled_D"'
+      MaterialExpressionEditorX=128
+      MaterialExpressionEditorY=48
+      MaterialExpressionGuid=DDC843EB4CBD30386E36DA935BD67B91
+      Material=Material'"M_LavaRelative"'
+   End Object
+   Begin Object Name="MaterialExpressionNormalize_0"
+      VectorInput=(Expression=MaterialExpressionMultiply'"M_LavaRelative:MaterialExpressionMultiply_5"')
+      MaterialExpressionEditorX=-144
+      MaterialExpressionEditorY=64
+      MaterialExpressionGuid=111565EF4AC2A436DD84438B7C858075
+      Material=Material'"M_LavaRelative"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_5"
+      A=(Expression=MaterialExpressionTransformPosition'"M_LavaRelative:MaterialExpressionTransformPosition_0"')
+      B=(Expression=MaterialExpressionMaterialFunctionCall'"M_LavaRelative:MaterialExpressionMaterialFunctionCall_3"')
+      MaterialExpressionEditorX=-368
+      MaterialExpressionEditorY=96
+      MaterialExpressionGuid=9AEE03F84BFF7D6974E8C9B4B831EEB8
+      Material=Material'"M_LavaRelative"'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_3"
+      A=(Expression=MaterialExpressionMaterialFunctionCall'"M_LavaRelative:MaterialExpressionMaterialFunctionCall_1"')
+      B=(Expression=MaterialExpressionMaterialFunctionCall'"M_LavaRelative:MaterialExpressionMaterialFunctionCall_0"')
+      MaterialExpressionEditorX=240
+      MaterialExpressionEditorY=-256
+      MaterialExpressionGuid=A4463F484651A5DCA21D979869C7F49F
+      Material=Material'"M_LavaRelative"'
+      bCollapsed=False
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_3"
+      MaterialFunction=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.ObjectScale"'
+      FunctionOutputs(0)=(ExpressionOutputId=BCB69D5945309E791CA6D5BAAEEB4640,Output=(OutputName="Scale XYZ"))
+      FunctionOutputs(1)=(ExpressionOutputId=E43D3D8744587DD99D067083827BBE09,Output=(OutputName="Scale X"))
+      FunctionOutputs(2)=(ExpressionOutputId=4E14A1064E83C8C589B19D9E7E1DFBA8,Output=(OutputName="Scale Y"))
+      FunctionOutputs(3)=(ExpressionOutputId=F299C8E84CE25E9B3767439611116C65,Output=(OutputName="Scale Z"))
+      MaterialExpressionEditorX=-512
+      MaterialExpressionEditorY=144
+      MaterialExpressionGuid=D3912C574DE3C755C8684BBC44C072FE
+      Material=Material'"M_LavaRelative"'
+      Outputs(0)=(OutputName="Scale XYZ")
+      Outputs(1)=(OutputName="Scale X")
+      Outputs(2)=(OutputName="Scale Y")
+      Outputs(3)=(OutputName="Scale Z")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_1"
+      MaterialFunction=MaterialFunction'"/Game/Materials/WorldMat.WorldMat"'
+      FunctionInputs(0)=(ExpressionInputId=4017D08E4DCCFC6AD01D65AB5D188381,Input=(Expression=MaterialExpressionTextureObject'"M_LavaRelative:MaterialExpressionTextureObject_1"',InputName="Texture"))
+      FunctionInputs(1)=(ExpressionInputId=C3195CF54294C66C34934ABAE102DCA8,Input=(Expression=MaterialExpressionConstant3Vector'"M_LavaRelative:MaterialExpressionConstant3Vector_1"',InputName="Size"))
+      FunctionInputs(2)=(ExpressionInputId=9317AA7142FCA83E6916F38D24E7D9E0,Input=(Expression=MaterialExpressionMultiply'"M_LavaRelative:MaterialExpressionMultiply_5"',InputName="Position"))
+      FunctionInputs(3)=(ExpressionInputId=7E6F23C5493B3C779BA2F1A9C5AFCF83,Input=(Expression=MaterialExpressionNormalize'"M_LavaRelative:MaterialExpressionNormalize_0"',InputName="normal"))
+      FunctionOutputs(0)=(ExpressionOutputId=4B369DAA4D15F385F49E92B58B5AFEF4,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=-32
+      MaterialExpressionEditorY=-256
+      MaterialExpressionGuid=2F1212F44835762F1469E6931A8A57C4
+      Material=Material'"M_LavaRelative"'
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionMaterialFunctionCall_0"
+      MaterialFunction=MaterialFunction'"/Game/Materials/WorldMat.WorldMat"'
+      FunctionInputs(0)=(ExpressionInputId=4017D08E4DCCFC6AD01D65AB5D188381,Input=(Expression=MaterialExpressionTextureObject'"M_LavaRelative:MaterialExpressionTextureObject_0"',InputName="Texture"))
+      FunctionInputs(1)=(ExpressionInputId=C3195CF54294C66C34934ABAE102DCA8,Input=(Expression=MaterialExpressionConstant3Vector'"M_LavaRelative:MaterialExpressionConstant3Vector_1"',InputName="Size"))
+      FunctionInputs(2)=(ExpressionInputId=9317AA7142FCA83E6916F38D24E7D9E0,Input=(Expression=MaterialExpressionMultiply'"M_LavaRelative:MaterialExpressionMultiply_5"',InputName="Position"))
+      FunctionInputs(3)=(ExpressionInputId=7E6F23C5493B3C779BA2F1A9C5AFCF83,Input=(Expression=MaterialExpressionNormalize'"M_LavaRelative:MaterialExpressionNormalize_0"',InputName="normal"))
+      FunctionOutputs(0)=(ExpressionOutputId=4B369DAA4D15F385F49E92B58B5AFEF4,Output=(OutputName="Result"))
+      MaterialExpressionEditorX=288
+      MaterialExpressionEditorY=48
+      MaterialExpressionGuid=2F1212F44835762F1469E6931A8A57C4
+      Material=Material'"M_LavaRelative"'
+      Outputs(0)=(OutputName="Result")
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_1"
+      Constant=(R=10000.000000,G=10000.000000,B=10000.000000,A=1.000000)
+      MaterialExpressionEditorX=-288
+      MaterialExpressionEditorY=-224
+      MaterialExpressionGuid=D533C2964E62EF61FEBD0BA6FAB0BF8C
+      Material=Material'"M_LavaRelative"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_32"
+      R=0.200000
+      MaterialExpressionEditorX=800
+      MaterialExpressionEditorY=-336
+      MaterialExpressionGuid=F300DE0A43951B507D5F3184001E3EA3
+      Material=Material'"M_LavaRelative"'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_31"
+      R=0.300000
+      MaterialExpressionEditorX=800
+      MaterialExpressionEditorY=-400
+      MaterialExpressionGuid=6448F0A4480A805300C26F87986AACA9
+      Material=Material'"M_LavaRelative"'
+   End Object
+   Begin Object Name="MaterialExpressionComponentMask_5"
+      Input=(Expression=MaterialExpressionMultiply'"M_LavaRelative:MaterialExpressionMultiply_3"')
+      R=True
+      G=True
+      MaterialExpressionEditorX=448
+      MaterialExpressionEditorY=-256
+      MaterialExpressionGuid=297B9F104749C1846463139470DD6C36
+      Material=Material'"M_LavaRelative"'
+   End Object
+   Metallic=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_31"')
+   Roughness=(Expression=MaterialExpressionConstant'"MaterialExpressionConstant_32"')
+   Normal=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_7"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EmissiveColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_6"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   bUsedWithStaticLighting=True
+   bUseFullPrecision=True
+   EditorX=1152
+   EditorY=-352
+   Expressions(0)=MaterialExpressionConstant'"MaterialExpressionConstant_31"'
+   Expressions(1)=MaterialExpressionConstant'"MaterialExpressionConstant_32"'
+   Expressions(2)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_7"'
+   Expressions(3)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_6"'
+   Expressions(4)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_0"'
+   Expressions(5)=MaterialExpressionVertexNormalWS'"MaterialExpressionVertexNormalWS_0"'
+   Expressions(6)=MaterialExpressionTextureObject'"MaterialExpressionTextureObject_0"'
+   Expressions(7)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_1"'
+   Expressions(8)=MaterialExpressionConstant3Vector'"MaterialExpressionConstant3Vector_1"'
+   Expressions(9)=MaterialExpressionVertexNormalWS'"MaterialExpressionVertexNormalWS_1"'
+   Expressions(10)=MaterialExpressionTextureObject'"MaterialExpressionTextureObject_1"'
+   Expressions(11)=MaterialExpressionMultiply'"MaterialExpressionMultiply_3"'
+   Expressions(12)=MaterialExpressionComponentMask'"MaterialExpressionComponentMask_5"'
+   Expressions(13)=MaterialExpressionWorldPosition'"MaterialExpressionWorldPosition_3"'
+   Expressions(14)=MaterialExpressionTransformPosition'"MaterialExpressionTransformPosition_0"'
+   Expressions(15)=MaterialExpressionMaterialFunctionCall'"MaterialExpressionMaterialFunctionCall_3"'
+   Expressions(16)=MaterialExpressionMultiply'"MaterialExpressionMultiply_5"'
+   Expressions(17)=MaterialExpressionNormalize'"MaterialExpressionNormalize_0"'
+   MaterialFunctionInfos(0)=(StateId=B7C71B914E2BB667772D6CBE2AB55665,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.LinearGradient"')
+   MaterialFunctionInfos(1)=(StateId=3FA44BF2462D624CFA2229876FE1F968,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.CheapContrast"')
+   MaterialFunctionInfos(2)=(StateId=1F93596B429C38EBC523E2A5DEE1F055,Function=MaterialFunction'"/Game/Materials/WorldMat.WorldMat"')
+   MaterialFunctionInfos(3)=(StateId=B7C71B914E2BB667772D6CBE2AB55665,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/Gradient/LinearGradient.LinearGradient"')
+   MaterialFunctionInfos(4)=(StateId=3FA44BF2462D624CFA2229876FE1F968,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions01/ImageAdjustment/CheapContrast.CheapContrast"')
+   MaterialFunctionInfos(5)=(StateId=1F93596B429C38EBC523E2A5DEE1F055,Function=MaterialFunction'"/Game/Materials/WorldMat.WorldMat"')
+   MaterialFunctionInfos(6)=(StateId=162D6D2B48CD8C456AA56F8E93FB317B,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions02/Utility/VectorLength.VectorLength"')
+   MaterialFunctionInfos(7)=(StateId=3B1300D34B5D563F7F502B8553801988,Function=MaterialFunction'"/Engine/Functions/Engine_MaterialFunctions02/WorldPositionOffset/ObjectScale.ObjectScale"')
+   bCanMaskedBeAssumedOpaque=True
+   StateId=0AD7E8E54F991124B24644AD6C8F1352
+   ReferencedTextureGuids(0)=6896C0394B724B19E956B9BB382041E0
+   ReferencedTextureGuids(1)=50CCDC994B1378399FBB50962B5735F3
+   LightmassSettings=(DiffuseBoost=10.000000)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=4540C2A0404341BC91E83996A733C704
+End Object
